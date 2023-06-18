@@ -17,7 +17,7 @@ public class Main {
         int needToAccumulate = 2_459_000;
         int month = 0;
         double clientPercentPerMonth = 1.01;
-        while (depositAmount < needToAccumulate){
+        while (depositAmount < needToAccumulate) {
             depositAmount += savings;
             month += 1;
             System.out.println("Месяц " + month + "-й, сумма накоплений равна " + depositAmount + " рублей");
@@ -27,12 +27,12 @@ public class Main {
     public static void task2() {
         System.out.println("Задание 2");
         int digit = 0;
-        while (digit < 10){
+        while (digit < 10) {
             digit += 1;
             System.out.print(digit + " ");
         }
         System.out.print("\n");
-        for (int i = 10; i > 0; i--){
+        for (int i = 10; i > 0; i--) {
             System.out.print(i + " ");
         }
         System.out.print("\n");
@@ -44,7 +44,7 @@ public class Main {
         int fertility = 17;
         int mortality = 8;
         int year = 0;
-        while (year < 10){
+        while (year < 10) {
             year += 1;
             population = population + (population/1000 * fertility) - (population/1000 * mortality);
             System.out.println("Год " + year + ", численность населения составляет: " + population);
@@ -57,7 +57,7 @@ public class Main {
         int needToAccumulate = 12_000_000;
         int month = 0;
         double clientPercentPerMonth = 1.07;
-        while (depositAmount < needToAccumulate){
+        while (depositAmount < needToAccumulate) {
             depositAmount *= clientPercentPerMonth;
             month += 1;
             System.out.println("Месяц " + month + "-й, сумма накоплений равна " + depositAmount + " рублей");
@@ -70,7 +70,7 @@ public class Main {
         int needToAccumulate = 12_000_000;
         int month = 0;
         double clientPercentPerMonth = 1.07;
-        while (depositAmount < needToAccumulate){
+        while (depositAmount < needToAccumulate) {
             depositAmount *= clientPercentPerMonth;
             month += 1;
             if (month % 6 == 0) {
@@ -85,7 +85,7 @@ public class Main {
         int years = 9;
         int month = years * 12;
         double clientPercentPerMonth = 1.07;
-        while (month > 1){
+        while (month > 1) {
             depositAmount *= clientPercentPerMonth;
             month -= 1;
             if (month % 6 == 0){
@@ -100,7 +100,7 @@ public class Main {
         int monthDays = 31;
         int weekDays = 7;
         System.out.print("Пятницы текущего месяца по числам: ");
-        while (friday <= monthDays){
+        while (friday <= monthDays) {
             System.out.print(friday + " ");
             friday += weekDays;
         }
@@ -113,9 +113,9 @@ public class Main {
         int end = 2123;
         int year = 0;
         int cometFlyBy = 79;
-        while (year + cometFlyBy - 1 < end){
+        while (year + cometFlyBy - 1 < end) {
             year += cometFlyBy;
-            if (year > start){
+            if (year > start) {
                 System.out.println(year);
             }
         }
